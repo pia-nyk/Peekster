@@ -17,4 +17,5 @@ It also summarises the content discussed in the meeting, thus providing concise 
 ## Demonstration
 Click the below image to view the video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eNBUvDCACqI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![Peekster Demo](https://img.youtube.com/vi/eNBUvDCACqI/0.jpg)](https://youtu.be/eNBUvDCACqI)
+
