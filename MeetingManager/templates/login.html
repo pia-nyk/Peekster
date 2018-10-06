@@ -4,67 +4,57 @@
 		<title>MeetingManager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
 			<div id="header">
 				<span class="logo icon fa-paper-plane-o"></span>
-				<h1><a href="profile.html">User Name</a></h1>
-				<p>username</p><br><br>
-				<h3><a href="login.html">LogOut</a></h3>
-
-
-				<br><br><br><br>
-
-				<div class="row">
-					<div class="6u 12u(mobilep)">
-						<ul class="actions">
-							<li><input type="text" value="Play Rec" /></li>
-						</ul>
-					</div>
-					<div class="6u 12u(mobilep)">
-						<ul class="actions">
-							<li><input type="button" value="Search" /></li>
-						</ul>
-					</div>
-				</div>
-				
+				<h1>Hi. I am Peekster.</h1>
+				<p>Your new Manager</p>
+				<p>Take me with you in meetings and never miss anything important.</p>
+				<br />
 			</div>
 
 		<!-- Main -->
 			<div id="main">
 
-				<header class="major container 75%">
-					<h2>SEARCH RESULTS</h2>
+			<!--	<header class="major container 75%">
+					<h2>We conduct experiments that
+					<br />
+					may or may not seriously
+					<br />
+					break the universe</h2>
 					
-				</header>
-				
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					
+				</header> -->
 
-				<div class="box alt container">
+			<!--	<div class="box alt container">
 					<section class="feature left">
-						<a href="data.html" class="image icon fa-reorder"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a>
 						<div class="content">
-							<h3>The Flipcart Walmart Deal</h3>
+							<h3>The First Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="data.html" class="image icon fa-reorder"><img src="images/pic02.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a>
 						<div class="content">
-							<h3>Elon Musk resignation required</h3>
+							<h3>The Second Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="data.html" class="image icon fa-reorder"><img src="images/pic03.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a>
 						<div class="content">
-							<h3>Meeting to discuss features of box 3</h3>
-							
+							<h3>The Third Thing</h3>
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
 						</div>
 					</section>
-				</div>
-
-				</div>
+				</div>-->
 
 				<!--
 				<div class="box container">
@@ -213,7 +203,7 @@
 						</form>
 					</section>
 				</div>
-				
+				-->
 
 			
 				<footer class="major container 75%">
@@ -224,22 +214,20 @@
 					</ul>
 				</footer>
 
-			</div>-->
+			</div>
 
 		<!-- Footer -->
 			<div id="footer">
 				<div class="container 75%">
 
-
-					
-					<!--<header class="major last">
+					<header class="major last">
 						<h2>Login</h2>
-					</header>-->
+					</header>
 
 					<!--<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
 					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>-->
 
-					<!--<form method="post" action="#">
+					<form method="post" name="login_form" action="/login">
 						<div class="row">
 							<div class="6u 12u(mobilep)">
 								<input type="text" name="username" placeholder="Username" />
@@ -254,11 +242,11 @@
 									<li><input type="submit" value="Submit" /></li>
 								</ul>
 								<ul class="actions">
-									<li><a href="#">Not yet registered?</a></li>
+									<li><a href="{{ url_for('index') }}">Not yet registered?</a></li>
 								</ul>
 							</div>
 						</div>
-					</form>-->
+					</form>
 
 
 					<ul class="copyright">
@@ -269,11 +257,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="/static/assets/js/main.js"></script>
 
 	</body>
 </html>

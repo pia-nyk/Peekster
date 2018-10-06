@@ -4,37 +4,65 @@
 		<title>MeetingManager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
 			<div id="header">
 				<span class="logo icon fa-paper-plane-o"></span>
-				<h1><a href="profile.html">User Name</a></h1>
-				<p>username</p><br><br>
-				<h3><a href="login.html">LogOut</a></h3>
-
+				<h1><a href="{{ url_for('profile_page') }}">{{ username }}</a></h1>
+			
+				<h3><a href="{{ url_for('login_page') }}">LogOut</a></h3>
 			</div>
 
 		<!-- Main -->
 			<div id="main">
 
 				<header class="major container 75%">
-					<h2>UPLOAD A MEETING FILE</h2>
+					<h2>RECORD A NEW MEETING</h2>
 					
-				</header>
+				</header> 
 
+			<script src="/static/assets/js/app.js"></script>
+				<div class="row">
+					<div class="6u 12u(mobilep)">
+						<ul class="actions">
+							<li><input type="button" id="recordButton" onclick="recordAction()" value="Record" /></li>
+						</ul>
+						<ul class="actions">
+							<li><input type="button" id="stopButton" onclick="stopAction()" value="Stop" /></li>
+						</ul>
+					</div>
+					<div class="6u 12u(mobilep)">
+						<ul class="actions">
+							<li><input type="button" id="playButton" onclick="playAction()" value="Play/Save" /></li>
+						</ul>
+					</div>
+				</div>
+				
 
-				<div class="box alt container">
+				<!--<div class="box alt container">
 					<section class="feature left">
-						<a href="#" class="image icon fa-upload"><img src="images/pic01.jpg" alt="" /></a>
+						<a href="#" class="image icon fa-phone"><img src="images/pic01.jpg" alt="" /></a>
 						<div class="content">
-							<input type="file" name="">
+							<h3>Record a new Meeting</h3>
 						</div>
 					</section>
-
-				</div>
+					<section class="feature right">
+						<a href="#" class="image icon fa-upload"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Upload a new recording</h3>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image icon fa-search"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Search from old content</h3>
+							
+						</div>
+					</section>
+				</div>-->
 
 				</div>
 
@@ -241,11 +269,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="/static/assets/js/main.js"></script>
 
 	</body>
 </html>

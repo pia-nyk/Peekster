@@ -3,14 +3,14 @@
 		<title>MeetingManager</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
 			<div id="header">
 				<span class="logo icon fa-paper-plane-o"></span>
-				<h1>Hi. I am 'Name'.</h1>
+				<h1>Hi. I am Peekster.</h1>
 				<p>Your new Manager</p>
 				<p>Take me with you in meetings and never miss anything important.</p>
 				<br />
@@ -224,7 +224,7 @@
 					<!--<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
 					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>-->
 
-					<form method="post" action="#">
+					<form name="sign_up_form" method="post" action="/signup">
 						<div class="row">
 							<div class="6u 12u(mobilep)">
 								<input type="text" name="name" placeholder="Name" />
@@ -251,13 +251,16 @@
 								<ul class="actions">
 									<li><input type="submit" value="Submit" /></li>
 								</ul>
-								<ul class="actions">
-									<li><a href="#">Already registered?</a></li>
-								</ul>
+								
 							</div>
 						</div>
 					</form>
+					<form name="already_signed_up" method="post" action="/loginpage">
+						<ul class="actions">
+							<li><button type="submit">Already registered?</button></li>
+						</ul>					
 
+					</form>
 
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>O(1)</a></li>
@@ -267,11 +270,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="/static/assets/js/main.js"></script>
 
 	</body>
 </html>
