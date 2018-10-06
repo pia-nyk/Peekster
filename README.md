@@ -15,6 +15,6 @@ It also summarises the content discussed in the meeting, thus providing concise 
 </ul>
 
 ## Demonstration
-Click the below link to view the video
+Click the below image to view the video
 
-"https://www.youtube.com/embed/LGYQizpL5Uw"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eNBUvDCACqI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
