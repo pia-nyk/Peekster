@@ -1,5 +1,5 @@
 # PEEKSTER
-<p> A web platform which records or uploads the audio files of live meetings and creates transcripts out of it, detecting different speakers <br>
+<p> A web platform which records the audio files of live meetings and creates transcripts out of it, detecting different speakers <br>
 It also summarises the content discussed in the meeting, thus providing concise details.<br>
 </p>
 
